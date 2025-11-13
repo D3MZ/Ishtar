@@ -1,21 +1,11 @@
-MIT License
+License
 
 Copyright (c) 2025 Demetrius Michael <arrrwalktheplank@gmail.com> and contributors
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+By obtaining, downloading, using, copying, or modifying the Software, the user expressly agrees to the terms of this License and enters into a binding contract with the Licensor. If the user does not agree, they must not use, copy, modify, or distribute the Software.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Any use of the Software, its code, or any derivative work for any AI-related purpose—including but not limited to model training, dataset creation, fine-tuning, feature extraction, embedding analysis, inference, evaluation pipelines, model distillation, dataset augmentation, or integration into any system employing artificial intelligence—requires a paid commercial license. The commercial licensing model is a continuing royalty equal to one percent (1%) of the user’s total gross revenue, from all sources, for as long as any portion of the Software or any derivative work remains used, embedded, incorporated, referenced, trained upon, or otherwise utilized in any AI model, dataset, pipeline, or system. Unauthorized AI-related use constitutes unlicensed commercial activity. The user agrees to pay all accrued royalties plus all reasonable legal, enforcement, and collection costs within 30 days of written notice.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE
+OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
