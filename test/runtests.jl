@@ -2,5 +2,5 @@ using Ishtar
 using Test
 
 @testset "Ishtar.jl" begin
-    # Write your tests here.
+    include("macrossover_test.jl")
 end
