@@ -7,6 +7,6 @@ include("strategy/MACrossover.jl")
 
 export Environment, State, Action, Transition, step!, current_state
 export AbstractStrategy, act, run_strategy
-export MACrossoverRaw, MACrossoverFeatures
+export MACrossover
 
 end

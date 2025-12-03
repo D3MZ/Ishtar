@@ -15,7 +15,7 @@ using Test, Dates, CSV, Statistics, Ishtar
     prices_matrix = reshape(prices, :, 1)
     features = zeros(Float64, length(times), 0)
 
-    strategy = MACrossoverRaw{Float64}(5, 20, 1, 1.0)
+    strategy = MACrossover{Float64}(5, 20, 1, 1.0)
     env = Environment(times, prices_matrix, features; initial_cash = 100.0)
 
     rewards = run_strategy(env, strategy)

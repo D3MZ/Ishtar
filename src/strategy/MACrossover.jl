@@ -1,11 +1,11 @@
-struct MACrossoverRaw{P} <: AbstractStrategy
+struct MACrossover{P} <: AbstractStrategy
     short::Int
     long::Int
     asset::Int
     position_size::P
 end
 
-function act(strategy::MACrossoverRaw{P}, env::Environment{P,F})::Action{P} where {P,F}
+function act(strategy::MACrossover{P}, env::Environment{P,F})::Action{P} where {P,F}
     t = env.index
     if t < strategy.long
         return Action(copy(env.positions))
