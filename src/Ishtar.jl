@@ -1,7 +1,6 @@
 module Ishtar
 
-using Dates
-using LinearAlgebra
+using Dates, LinearAlgebra, CSV
 
 mutable struct Environment
     times::Vector{DateTime}        # length T
@@ -47,8 +46,8 @@ function Environment(times::Vector{DateTime},
                      features::Matrix{Float64};
                      initial_cash::Float64 = 0.0)
     T, n = size(prices)
-    @assert length(times) == T "times length must match number of rows in prices"
-    @assert size(features, 1) == T "features must have same number of rows as prices"
+    @assert length(times) == T
+    @assert size(features, 1) == T
     positions = zeros(Float64, n)
     Environment(times, prices, features, 1, positions, initial_cash)
 end
@@ -66,23 +65,23 @@ function step!(env::Environment, action::Action)
 
     t = env.index
 
-    prices_t = env.prices[t, :]
-    value_t = env.cash + env.positions ⋅ prices_t
+    prices = env.prices[t, :]
+    value = env.cash + env.positions ⋅ prices
 
     target = action.target_positions
 
     delta_q = target .- env.positions
-    trade_cost = delta_q ⋅ prices_t
+    trade_cost = delta_q ⋅ prices
 
     env.cash -= trade_cost
     env.positions .= target
 
     env.index += 1
 
-    prices_tp1 = env.prices[env.index, :]
-    value_tp1 = env.cash + env.positions ⋅ prices_tp1
+    nextprices = env.prices[env.index, :]
+    nextvalue = env.cash + env.positions ⋅ nextprices
 
-    reward = log(value_tp1 / value_t)
+    reward = log(nextvalue / value)
     next_state = current_state(env)
     done = env.index >= T
 
